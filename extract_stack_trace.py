@@ -8,7 +8,7 @@ def bar():
 
 def foo():
     for _, frame in sys._current_frames().items():
-        for line in traceback.extract_stack(frame):
+        for line in reversed(traceback.extract_stack(frame)):
             print(line)
 
 
