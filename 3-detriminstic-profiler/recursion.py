@@ -4,5 +4,5 @@ def recur(n):
     recur(n - 1)
 
 
-for i in range(5000):
-    recur(700)
+for i in range(200000):
+    recur(70)

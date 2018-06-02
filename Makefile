@@ -1,30 +1,32 @@
 1-profiling-demo:
+	cd 1-profiling-demo && \
+	pygmentize foo.py && \
 	python -m cProfile foo.py
 
-2-extract-stack-trace:
-	python extract_stack_trace.py
+2-stack-access:
+	cd 2-stack-access && \
+	pygmentize stack_access.py && \
+	python stack_access.py
 
-3-recursion:
-	time -f "\t%E elapsed" python recursion.py
+3-detriminstic-profiler.set_profile:
+	cd 3-detriminstic-profiler && \
+	pygmentize d3_setprofile.py && \
+	python d3_setprofile.py
 
-4-recursion-with-tracing:
-	time -f "\t%E elapsed" python -m cProfile recursion.py
+3-detriminstic-profiler.recurison:
+	cd 3-detriminstic-profiler && \
+	pygmentize recursion.py && \
+	time -f "%E elapsed" python recursion.py
 
-5-stack-sampler-demo:
-	python stacksampler-demo.py
+3-detriminstic-profiler.recurison_w_profiler:
+	cd 3-detriminstic-profiler && \
+	time -f "%E elapsed" python -m cProfile recursion.py
 
-6-comparision:
-	@echo "Without profiler:"
-	time -f "\n%E elapsed\n" python recursion.py
+4-statistical-profiler:
+	cd 4-statistical-profiler && \
+	python demo.py
 
-	@echo "With tracing profiler:"
-	time -f "\n%E elapsed\n" python -m cProfile recursion.py
-
-	@echo "With sampling profiler:"
-	time -f "\n%E elapsed\n" python recursion_with_sampler.py
-
-
-7-flamegraph:
+5-flamegraph:
 	python -m flamegraph  -F "%(fname)s:%(fun)s:%(line)s" -o perf.log foo.py
 	sed -i 's#/home/noame/.virtualenvs/profiling-talk/lib/python3.6/site-packages##g' perf.log
 	flamegraph.pl --title "MyScript CPU" perf.log > perf.svg
