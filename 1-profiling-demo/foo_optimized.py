@@ -1,9 +1,12 @@
+import math
+
+
 def super_power(x):
     return x ** x ** x
 
 
 def count_digits(num):
-    return len(str(num))
+    return int(math.log10(num)) + 1
 
 
 result = super_power(7)

@@ -2,9 +2,9 @@ import sys
 import traceback
 
 
-def profiler(frame, event, arg):
+def profiler(call_stack, event, arg):
     if event == 'c_call':
-        line = traceback.extract_stack(frame)[0]
+        line = traceback.extract_stack(call_stack)[0]
         print(arg)
         print(line.line)
 

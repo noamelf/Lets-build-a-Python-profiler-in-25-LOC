@@ -8,8 +8,8 @@ INTERVAL = 0.005
 stats = collections.defaultdict(int)
 
 
-def _sample(signum, frame):
-    stack = traceback.extract_stack(frame)
+def _sample(signum, call_stack):
+    stack = traceback.extract_stack(call_stack)
     formatted_stack = ';'.join(line.line for line in stack)
     stats[formatted_stack] += 1
 

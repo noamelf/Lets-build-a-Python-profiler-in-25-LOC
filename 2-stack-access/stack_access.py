@@ -3,9 +3,9 @@ import traceback
 
 
 def show_stack():
-    for _, frame in sys._current_frames().items():
-        for line in reversed(traceback.extract_stack(frame)):
-            print(f'{line.filename}:{line.lineno}:{line.name} - "{line.line}"')
+    for _, call_stack in sys._current_frames().items():
+        for frame in traceback.extract_stack(call_stack):
+            print(f'{frame.filename}:{frame.lineno}:{frame.name} - "{frame.line}"')
 
 
 def bar():
