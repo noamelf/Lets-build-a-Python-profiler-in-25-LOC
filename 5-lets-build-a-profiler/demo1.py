@@ -2,7 +2,7 @@ import sProfiler
 
 
 def calc(x):
-    return x ** x
+    return  x ** x
 
 
 def main():

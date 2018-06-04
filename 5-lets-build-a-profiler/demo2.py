@@ -13,7 +13,7 @@ def local_pep(pep):
 
 
 def main():
-    for pep in range(1, 9):
+    for pep in range(1, 4):
         local_pep(pep)
         print(f'Download pep {pep} successfully', file=sys.stderr)
 
