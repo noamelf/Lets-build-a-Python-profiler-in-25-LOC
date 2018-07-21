@@ -15,7 +15,7 @@ by Noam Elfanbaum
 
 ## What is profiling?
 
-A profile is a set of statistics that describes how often and for how long various parts of the program executed. 
+> A profile is a set of statistics that describes how often and for how long various parts of the program executed. 
 
 ---
 
