@@ -1,7 +1,6 @@
 ---
 
-# Let’s Build a Python Profiler 
-## (in 25 LOC!) 
+# Let’s Build a Python Profiler in 25 LOC! 
 by Noam Elfanbaum
 
 ---
@@ -31,7 +30,7 @@ Let’s do a demonstration with cProfile (although both work the same)
 
 ---
 
----?code=profiling_demo.py&lang=python&title=profiling_demo.py 
+---?code=profiling_demo.py&lang=python&title=Profiling demo 
 
 @[1-2](Power a number twice)
 @[5-6](Count the number of digits)
@@ -91,6 +90,8 @@ pygmentize setprofile.py
 python setprofile.py
 -->
 
+---
+
 ## Disadvantage of Deterministic profilers
 - Introduces a fixed amount of latency for every function call / line of code executed.
 Standard programs does not have so many function calls.
@@ -104,6 +105,7 @@ python bar.py
 python -m cProfile bar.py
 -->
 
+---
 
 ## How do statistical profilers work?
 - Statistical profilers sample the program on a given interval. 
@@ -114,6 +116,8 @@ python -m cProfile bar.py
 Pygmentize alert.py
 Python alert.py
 -->
+
+---
 
 # Now, let’s build a (naive) statistical profiler in 25 LOC!
 
@@ -139,6 +143,8 @@ The results for more complex programs are harder to understand, practically impo
 python demo2.py | flamegraph | browser 
 -->
 
+---
+
 ## Reference
 - Talk code repository
 - Juila Evans blog post - https://jvns.ca/blog/2017/12/17/how-do-ruby---python-profilers-work-/
@@ -148,6 +154,6 @@ python demo2.py | flamegraph | browser
   - https://docs.python.org/3/library/profile.html
   - https://docs.python.org/3/library/sys.html#sys.setprofile
 
---
+---
 
 Thanks!
