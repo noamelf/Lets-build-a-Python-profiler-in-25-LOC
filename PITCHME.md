@@ -25,7 +25,6 @@ by Noam Elfanbaum
   - cProfile - a C extended profiler for better performance
 
 ---
-## Profiling demo
 
 ---?code=profiling_demo.py&lang=python&title=Profiling demo 
 
@@ -35,24 +34,19 @@ by Noam Elfanbaum
 
 ---
 
-<!--
-cd 1-profiling-demo
-pygmentize foo.py
-Foo is a simple module that do triple power on a number and prints the number of digits. Let’s run it.
-It takes quite some time, what do you think is taking longer?
+## Profiling demo 
+- Let's run our demo `python profiling_demo.py`
+<!--It takes quite some time, what do you think is taking longer? -->
+- Now let's profile it: `python -m cProfile -s tottime foo.py` and see where does it slows down
+- How can to optimize it?
 
+---
 
-Ok, let’s run it under cProfile and check, we can sort the results by total time.
-python -m cProfile -s tottime foo.py
-We see that converting digit to string is quite a heavy on the CPU with big numbers.
-Let’s review the other colums as well.
+---?code=optimized_demo.py&lang=python&title=Optimized demo 
 
+@[8-9](Use log10)
 
-After thinking long and hard about the problem, I gave up, googled it and found a way to optimize my solution!
-Python foo-optimized.py
-And walla, and got 50x improvement and cheers from my fellow engineers.
-After we saw what a profiler is for, let’s see how it works!
--->
+---
 
 ## How do profilers work?
 
