@@ -30,11 +30,11 @@ Let’s do a demonstration with cProfile (although both work the same)
 
 ---
 
----?code=1-profiling-demo/foo.py&lang=python
+---?code=1-profiling-demo/demo.py&lang=python: demo.py 
 
-@[1-2](Init Spark cluster data source)
-@[5-6](Build RDD[AWSTask] from source)
-@[9-11](Delegate RDD[AWSTask] to AWS Lambda)
+@[1-2](Multiply a large number)
+@[5-6](Count the number of digits)
+@[9-11](Run the functions)
 
 ---
 
