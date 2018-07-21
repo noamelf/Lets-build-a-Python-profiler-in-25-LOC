@@ -5,11 +5,11 @@ by Noam Elfanbaum
 
 ---
 
-# About me
+## About me
 
 - Data Engineering lead at
-- Involved with PywebIL & Pycon Israel
-- Find me at @noamelf everywhere or at noamelf.com
+- Involved with [PywebIL](https://www.meetup.com/PyWeb-IL/) & [Pycon Israel](https://il.pycon.org/)
+- Find me online at [@noamelf](https://twitter.com/noamelf) and [noamelf.com](https://noamelf.com)
 
 ---
 
@@ -19,7 +19,7 @@ A profile is a set of statistics that describes how often and for how long vario
 
 ---
 
-##  Python’s profilers
+## Python’s profilers
 Python has 2 builtin profilers in stdlib:
   - profile - an early pure Python implementation
   - cProfile - a C extended profiler for better performance
@@ -30,24 +30,10 @@ Let’s do a demonstration with cProfile (although both work the same)
 
 ---
 
-```python
-def super_power(x):
-    return x ** x ** x
-```
-. . .
-
-```python
-def count_digits(num):
-    return len(str(num))
-```
-. . .
-
-```python
-result = super_power(7)
-digit_count = count_digits(result)
-print(digit_count)
-```
-
+---?code=1-profiling-demo/foo.py&lang=python
+@[1-2](Init Spark cluster data source)
+@[5-6](Build RDD[AWSTask] from source)
+@[9-11](Delegate RDD[AWSTask] to AWS Lambda)
 <!--
 
 cd 1-profiling-demo
