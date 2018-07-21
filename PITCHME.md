@@ -20,15 +20,12 @@ by Noam Elfanbaum
 ---
 
 ## Python’s profilers
-Python has 2 builtin profilers in stdlib:
+- Python has 2 builtin profilers in stdlib:
   - profile - an early pure Python implementation
   - cProfile - a C extended profiler for better performance
 
-<!--
-Let’s do a demonstration with cProfile (although both work the same)
--->
-
 ---
+## Profiling demo
 
 ---?code=profiling_demo.py&lang=python&title=Profiling demo 
 
