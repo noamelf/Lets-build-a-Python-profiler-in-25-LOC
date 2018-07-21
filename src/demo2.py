@@ -2,7 +2,7 @@ import sys
 import tempfile
 import urllib.request
 
-import sProfiler
+from src import sProfiler
 
 
 def local_pep(pep):

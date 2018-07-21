@@ -1,4 +1,4 @@
-import sProfiler
+from src import sProfiler
 
 
 def calc(x):

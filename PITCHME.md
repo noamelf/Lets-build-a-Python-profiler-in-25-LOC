@@ -30,7 +30,7 @@ Let’s do a demonstration with cProfile (although both work the same)
 
 ---
 
----?code=1-profiling-demo/demo.py&lang=python: demo.py 
+---?code=profiling_demo.py&lang=python&title=profiling_demo.py 
 
 @[1-2](Multiply a large number)
 @[5-6](Count the number of digits)
