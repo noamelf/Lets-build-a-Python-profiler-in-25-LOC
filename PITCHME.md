@@ -24,8 +24,6 @@ by Noam Elfanbaum
   - profile - an early pure Python implementation
   - cProfile - a C extended profiler for better performance
 
----
-
 ---?code=profiling_demo.py&lang=python&title=Profiling demo 
 
 @[1-2](Power a number twice)
@@ -39,8 +37,6 @@ by Noam Elfanbaum
 <!--It takes quite some time, what do you think is taking longer? -->
 - Now let's profile it: `python -m cProfile -s tottime foo.py` and see where does it slows down
 - How can to optimize it?
-
----
 
 ---?code=optimized_demo.py&lang=python&title=Optimized demo 
 
