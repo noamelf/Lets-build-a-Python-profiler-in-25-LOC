@@ -31,11 +31,14 @@ Let’s do a demonstration with cProfile (although both work the same)
 ---
 
 ---?code=1-profiling-demo/foo.py&lang=python
+
 @[1-2](Init Spark cluster data source)
 @[5-6](Build RDD[AWSTask] from source)
 @[9-11](Delegate RDD[AWSTask] to AWS Lambda)
-<!--
 
+---
+
+<!--
 cd 1-profiling-demo
 pygmentize foo.py
 Foo is a simple module that do triple power on a number and prints the number of digits. Let’s run it.
@@ -52,10 +55,7 @@ After thinking long and hard about the problem, I gave up, googled it and found 
 Python foo-optimized.py
 And walla, and got 50x improvement and cheers from my fellow engineers.
 After we saw what a profiler is for, let’s see how it works!
-
 -->
-
----
 
 ## How do profilers work?
 
