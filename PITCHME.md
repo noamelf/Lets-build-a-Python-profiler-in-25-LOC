@@ -32,7 +32,7 @@ Let’s do a demonstration with cProfile (although both work the same)
 
 ---?code=profiling_demo.py&lang=python&title=profiling_demo.py 
 
-@[1-2](Multiply a large number)
+@[1-2](Power a number twice)
 @[5-6](Count the number of digits)
 @[9-11](Run the functions)
 
