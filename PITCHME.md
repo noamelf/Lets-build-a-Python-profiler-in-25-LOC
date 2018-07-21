@@ -1,6 +1,7 @@
 ---
 
-# Let’s Build a Python Profiler in 25 LOC 
+# Let’s Build a Python Profiler 
+## (in 25 LOC!) 
 by Noam Elfanbaum
 
 ---
