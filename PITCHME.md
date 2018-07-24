@@ -24,7 +24,7 @@ by Noam Elfanbaum
   - profile - an early pure Python implementation
   - cProfile - a C extended profiler for better performance
 
----?code=profiling_demo.py&lang=python&title=Profiling demo 
+---?code=src/profiling_demo.py&lang=python&title=Profiling demo 
 @[1-2](Power a number twice)
 @[5-6](Count the number of digits)
 @[9-11](Run the functions)
@@ -38,7 +38,7 @@ TODO: Maybe shows all the columns?
 - This shows different parameters, but we want to know which function is taking the most total time
   So we can add the -s tottime and see it clearly.
 
----?code=optimized_demo.py&lang=python&title=Optimized demo 
+---?code=src/optimized_demo.py&lang=python&title=Optimized demo 
 @[8-9](Use log10 instead)
 
 ---
