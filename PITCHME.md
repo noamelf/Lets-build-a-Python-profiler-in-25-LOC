@@ -49,11 +49,16 @@ TODO: Maybe shows all the columns?
 
 ---
 
-## It's magic! 
-or is it?
+## It's magic! Right?
+
+. . .
+
 - When inside a Python program you have pretty easy access to its stack. 
 - Most profilers run as part of your Python process. 
 
+Note: 
+- So one of the most satasfing things for me in programming is to figure out how things actually work, 
+and we're going to do just that!
 
 <!--
 pygmentize stack_access.py
