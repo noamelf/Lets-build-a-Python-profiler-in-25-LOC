@@ -2,7 +2,9 @@ import sys
 import tempfile
 import urllib.request
 
-from . import sfProfiler
+import sfProfiler
+
+CONTROVERSIAL_PEPS = (3000, 572)
 
 
 def save_pep(pep):
@@ -14,7 +16,7 @@ def save_pep(pep):
 
 
 def main():
-    for pep in [3000, ]:
+    for pep in CONTROVERSIAL_PEPS:
         save_pep(pep)
         print(f'Download pep {pep} successfully', file=sys.stderr)
 
