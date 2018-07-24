@@ -26,8 +26,8 @@ by Noam Elfanbaum
 
 ---?code=src/profiling_demo.py&lang=python&title=Profiling demo 
 @[2-3](Power a number twice)
-@[5-6](Count the number of digits)
-@[9-11](Run the functions)
+@[6-7](Count the number of digits)
+@[10-12](Run the functions)
 
 Note:
 
