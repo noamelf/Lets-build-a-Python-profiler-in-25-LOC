@@ -90,9 +90,6 @@ how we trigger that functionality.
 @[11](Hook it to setprofile)
 @[12](Execute some code)
 
-Note:
-- We can see thee meaining 
-
 ---
 
 ## Disadvantage of Deterministic profilers
