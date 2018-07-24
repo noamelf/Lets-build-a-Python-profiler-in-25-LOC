@@ -29,13 +29,15 @@ by Noam Elfanbaum
 @[5-6](Count the number of digits)
 @[9-11](Run the functions)
 
----
-
-## Profiling demo 
-- Let's run our demo `python profiling_demo.py`
 <!--It takes quite some time, what do you think is taking longer? -->
-- Now let's profile it: `python -m cProfile -s tottime foo.py` and see where does it slows down
-- How can to optimize it?
+
+---
+## How to use Python profiler?
+- To see where does the program slows down, let's run the code and sort it by total time:
+    ```bash
+    python -m cProfile -s tottime foo.py
+    ```
+
 
 ---?code=optimized_demo.py&lang=python&title=Optimized demo 
 @[8-9](Use log10 instead)
