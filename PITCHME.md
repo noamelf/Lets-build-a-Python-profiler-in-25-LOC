@@ -197,8 +197,8 @@ visualization tool they are easy.
 - Brendan Gregg's [Flame Graph](https://github.com/brendangregg/FlameGraph) tool 
 - Juila Evans [post](https://jvns.ca/blog/2017/12/17/how-do-ruby---python-profilers-work-/) about Ruby and Python profilers
 - Nylas performance [post](https://www.nylas.com/blog/performance/) where they explain how they built a homemade performance monitoring service (recommended!).
-- Python documentation [about](https://docs.python.org/3/library/profile.html) [profilers](https://docs.python.org/3/library/sys.html#sys.setprofile)
-- The talk [Github repository](https://github.com/noamelf/Lets-build-a-Python-profiler-in-25-LOC)
+- Python's [profilers](https://docs.python.org/3/library/profile.html) [docs](https://docs.python.org/3/library/sys.html#sys.setprofile)
+- This talk can be found on [Github](https://github.com/noamelf/Lets-build-a-Python-profiler-in-25-LOC)
 
 @ulend
 
