@@ -62,7 +62,7 @@ Note:
 - So one of the most satisfying things for me in programming is to figure out how things actually work, 
 and we're going to do just that!
 
----?code=src/stack_access.py&lang=python&title=Accessing the Python stack
+---?code=src/stack_access.py&lang=python&title=Accessing the process call stack
 @[6](Easily access the stack)
 @[7-9](Extract the call trace and print it)
 
