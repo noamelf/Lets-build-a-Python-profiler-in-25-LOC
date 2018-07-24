@@ -52,8 +52,10 @@ TODO: Maybe shows all the columns?
 ## It's magic! Right?
 
 @ul
+
 - When inside a Python program you have pretty easy access to its stack. 
 - Most profilers run as part of your Python process. 
+
 @ulend
 
 Note: 
