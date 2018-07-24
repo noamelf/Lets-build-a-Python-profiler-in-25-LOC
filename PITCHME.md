@@ -29,7 +29,7 @@ by Noam Elfanbaum
 @[5-6](Count the number of digits)
 @[9-11](Run the functions)
 
-<!--It takes quite some time, which part if the code is taking the most time? -->
+    <!--It takes quite some time, which part if the code is taking the most time? -->
 
 <!--
 - To see where does the program slows down, let's run the code and sort it by total time:
