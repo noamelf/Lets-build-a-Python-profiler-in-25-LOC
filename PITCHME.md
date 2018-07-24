@@ -86,7 +86,8 @@ how we trigger that functionality.
 - When the callback gets called, it records the stack for later analysis.
 
 ---?code=src/setprofile.py&lang=python&title=Using setprofile
-@[9-10](Use log10 instead)
+@[5-9](Define a callback function)
+
 
 ---
 
