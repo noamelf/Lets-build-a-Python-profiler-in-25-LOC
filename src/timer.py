@@ -1,16 +1,15 @@
 import signal
-from urllib.request import urlopen
-
-TIMEOUT = 3
+import time
 
 
 def handler(signum, call_stack):
-    raise TimeoutError(f'Connection took more than {TIMEOUT} seconds')
+    print(signum, call_stack)
+    signal.alarm(1)
 
 
 signal.signal(signal.SIGALRM, handler)
-signal.alarm(TIMEOUT)
+signal.alarm(1)
 
-urlopen('http://localhost:5000')
+time.sleep(5)
 
 signal.alarm(0)
