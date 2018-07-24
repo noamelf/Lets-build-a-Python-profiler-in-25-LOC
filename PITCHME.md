@@ -170,7 +170,7 @@ Note:
 - And this is with generous spacings!
 
 ---?code=src/sfp_demo1.py&lang=python&title=Simple usage of sfProfiler
-@[4-10](main calls calc with 2 different numbers)
+@[4-10](main() calls calc() with 2 different numbers)
 @[13-15](Starting the profiler, running the code, and printing the stats)
 
 Note:
