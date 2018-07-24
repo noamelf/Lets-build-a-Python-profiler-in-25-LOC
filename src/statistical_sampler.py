@@ -1,4 +1,4 @@
-# timer.py
+# statistical_sampler.py
 import signal, time, traceback
 
 def handler(signum, call_stack):

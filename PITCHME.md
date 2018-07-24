@@ -110,41 +110,43 @@ how we trigger that functionality.
 
 @ulend
 
----?code=src/timer.py&lang=python&title=Using OS signals to trigger sampling
+---?code=src/statistical_sampler.py&lang=python&title=Using OS signals to trigger sampling
 @[4-7](Setup a callback method)
 @[7](Set alarm for next sample)
 @[9](Setup signal to call our handler)
 @[10](Set the timer)
 @[12](Execute some code)
-@[12](Nullify alarm)
+@[14](Nullify the alarm upon exit)
 
+---
 
+## When to use which profiler?
 
+@ul
+
+- Statistical profilers:
+  - Low, controllable and predicted overhead by optimizing the sampling interval
+  - Less accurate result since it can miss stuff.
+  - More suitable for continuous, low impact production monitoring.
+
+@ulend
+    
 ---
 
 ## When to use which profiler type?
 
 @ul
 
-- Statistical profilers are more suitable for continuous, low impact production monitoring.
-- Deterministic profilers are more accurate hence are better for interactive debugging.
-
+- Deterministic profilers:
+  - Introduces a fixed amount of latency for every function call / line of code executed.
+  - Shows the exact program execution stack
+  - More suitable for interactive/local debugging.
+  
 @ulend
 
 
-<!--
-## 
-- Introduces a fixed amount of latency for every function call / line of code executed.
-Standard programs does not have so many function calls.
-> “The interpreted nature of Python tends to add so much overhead to execution, that deterministic profiling tends to only add small processing overhead in typical applications”
-
-Run:
-But there is a disadvantage to using deterministic profilers in production settings, can any one think of one?
-pygmentize bar.py
-python bar.py
-python -m cProfile bar.py
--->
-
+Note:
+- What do you think, when should we use which profiler?
 
 ---
 
