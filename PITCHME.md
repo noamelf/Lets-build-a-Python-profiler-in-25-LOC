@@ -86,10 +86,12 @@ how we trigger that functionality.
 ## How do deterministic profilers work?
 
 @ul
+
 - Python let you specify a callback that gets run when interpreter events happen:
     - `sys.setprofile` - triggered when a function or a line of code is called
     - `sys.settrace` - triggered only when a function is called  
 - When the callback gets called, it records the stack for later analysis.
+
 @ulend
 
 ---?code=src/setprofile.py&lang=python&title=Using setprofile
@@ -103,8 +105,7 @@ how we trigger that functionality.
 
 @ul
 
-- Statistical profilers sample the program on a given interval. 
-- It has less overhead than deterministic profiler, but is also less accurate.  
+- Statistical profilers sample the program on a given interval.   
 - One way to implement the sampling is to ask the OS kernel to interrupt the program on a given interval.
 
 @ulend
