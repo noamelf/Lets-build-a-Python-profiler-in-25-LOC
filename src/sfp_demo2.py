@@ -14,7 +14,7 @@ def save_pep(pep):
 
 
 def main():
-    for pep in range(1, 4):
+    for pep in [3000, ]:
         save_pep(pep)
         print(f'Download pep {pep} successfully', file=sys.stderr)
 
