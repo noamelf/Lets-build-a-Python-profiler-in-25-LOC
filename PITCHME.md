@@ -51,8 +51,9 @@ TODO: Maybe shows all the columns?
 
 ## It's magic! 
 or is it?
-- If you’re inside a Python program you generally have pretty easy access to its stack. 
-- Most profilers run inside your Python process. 
+- When inside a Python program you have pretty easy access to its stack. 
+- Most profilers run as part of your Python process. 
+
 
 <!--
 pygmentize stack_access.py
