@@ -8,7 +8,8 @@ def print_handler(signum, call_stack):
 def set_signal(handler, interval=1):
     signal.signal(signal.SIGPROF, handler)
     signal.setitimer(signal.ITIMER_PROF, interval, interval)
-    atexit.register(lambda: signal.setitimer(signal.ITIMER_PROF, 0))
+    null_timer = lambda: signal.setitimer(signal.ITIMER_PROF, 0)
+    atexit.register(null_timer)
 
 set_signal(print_handler)
 
