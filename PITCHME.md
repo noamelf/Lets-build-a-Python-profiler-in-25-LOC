@@ -114,7 +114,7 @@ how we trigger that functionality.
 @[4-7](Setup a callback method)
 @[7](Set alarm for next sample)
 @[9](Setup signal to call our handler)
-@[10](Setup the first sample)
+@[10](Set the timer)
 @[12](Execute some code)
 @[12](Nullify alarm)
 
