@@ -92,21 +92,6 @@ how we trigger that functionality.
 
 ---
 
-## Disadvantage of Deterministic profilers
-- Introduces a fixed amount of latency for every function call / line of code executed.
-Standard programs does not have so many function calls.
-> “The interpreted nature of Python tends to add so much overhead to execution, that deterministic profiling tends to only add small processing overhead in typical applications”
-
-<!--
-Run:
-But there is a disadvantage to using deterministic profilers in production settings, can any one think of one?
-pygmentize bar.py
-python bar.py
-python -m cProfile bar.py
--->
-
----
-
 ## How do statistical profilers work?
 - Statistical profilers sample the program on a given interval. 
 - It has less overhead than deterministic profiler, but is also less accurate.  
@@ -116,6 +101,32 @@ python -m cProfile bar.py
 Pygmentize alert.py
 Python alert.py
 -->
+
+---
+
+## When to use which profiler type?
+
+@ul
+
+- Statistical profilers are more suitable for continuous, low impact production monitoring.
+- Deterministic profilers are more accurate hence are better for interactive debugging.
+
+@ulend
+
+
+<!--
+## 
+- Introduces a fixed amount of latency for every function call / line of code executed.
+Standard programs does not have so many function calls.
+> “The interpreted nature of Python tends to add so much overhead to execution, that deterministic profiling tends to only add small processing overhead in typical applications”
+
+Run:
+But there is a disadvantage to using deterministic profilers in production settings, can any one think of one?
+pygmentize bar.py
+python bar.py
+python -m cProfile bar.py
+-->
+
 
 ---
 
@@ -146,7 +157,7 @@ python demo2.py | flamegraph | browser
 ---
 
 ## Reference
-- Talk code repository
+- [Talk code repository]()
 - Juila Evans blog post - https://jvns.ca/blog/2017/12/17/how-do-ruby---python-profilers-work-/
 - Nylas blog post - https://www.nylas.com/blog/performance/
 - Flame Graph by Brendan Gregg https://github.com/brendangregg/FlameGraph 
