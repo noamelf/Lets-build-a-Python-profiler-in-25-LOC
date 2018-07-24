@@ -110,7 +110,7 @@ how we trigger that functionality.
 
 @ulend
 
----?code=src/timer.py&lang=python&title=Using system signals to sample program
+---?code=src/timer.py&lang=python&title=Using OS signals to trigger sampling
 @[4-7](Setup a callback method)
 @[7](Set alarm for next sample)
 @[9](Setup signal to call our handler)
