@@ -1,8 +1,8 @@
-from src import sfProfiler
+from . import sfProfiler
 
 
 def calc(x):
-    return  x ** x
+    return x ** x
 
 
 def main():
