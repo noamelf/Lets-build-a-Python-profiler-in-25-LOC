@@ -152,10 +152,21 @@ Note:
 
 # Now, let’s build a (naive) statistical profiler in 25 LOC!
 
+Note:
+- We have all our pieces together now, to build our own statistical profiler, the only thing we need to think about is 
+how to present the output.
+- For this, there is a really cool project called flame graph that receives a fairly simple relative input, and produces 
+beautiful graphs. 
+
+---?code=src/fProfiler.py&lang=python&title=Flame graph profiler
+
 Notes:
+
 - Let's connect all the dots to our own statistical profile in 25 LOC.
-- I wanted to write it live with you guys, but it I was afraid it wouldn’t work, so I wrote it down in advance.
 - The output is built in such a way that we can visualize it easily with a tool called flamegraph.
+
+
+---
 
 - To test our proflier we’re going to use a simple program called demo1
 pygmentize demo1.py
@@ -163,6 +174,9 @@ python demo1.py
 The results are pretty clear,we can see that calc 100K took x time of our sampling and 200K took y time
 Now let’s visualize it:
 python demo1.py | flamegraph | browser .
+
+
+---
 
 Now let’s run a more complex program
 pygmentize demo2.py

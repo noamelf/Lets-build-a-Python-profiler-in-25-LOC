@@ -2,7 +2,7 @@ import atexit, collections, signal, traceback
 
 stats = collections.defaultdict(int)
 
-def _sample(signum, call_stack):
+def _sample(_, call_stack):
     stack = traceback.extract_stack(call_stack)
     formatted_stack = ';'.join(line.line for line in stack)  # 'main();foo();bar()'
     stats[formatted_stack] += 1
