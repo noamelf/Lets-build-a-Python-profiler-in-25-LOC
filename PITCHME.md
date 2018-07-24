@@ -30,6 +30,7 @@ by Noam Elfanbaum
 @[9-11](Run the functions)
 
 Note:
+
 - It takes quite some time, which part if the code is taking the most time? -->
 - To see where does the program slows down, let's run the code and sort it by total time:
 python -m cProfile foo.py
