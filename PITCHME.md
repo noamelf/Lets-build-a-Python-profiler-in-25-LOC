@@ -49,7 +49,7 @@ TODO: Maybe shows all the columns?
 
 ---
 
-## How do profilers work?
+## It's magic! or is it?
 
 - If you’re inside a Python program you generally have pretty easy access to its stack. 
 - Most profilers run inside your Python process. 
