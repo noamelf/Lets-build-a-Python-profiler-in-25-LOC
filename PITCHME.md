@@ -7,7 +7,7 @@ by Noam Elfanbaum
 
 ## About me
 
-- Data Engineering lead at
+- Data Engineering lead at Bluevine
 - Involved with [PywebIL](https://www.meetup.com/PyWeb-IL/) & [Pycon Israel](https://il.pycon.org/)
 - Find me online at [@noamelf](https://twitter.com/noamelf) and [noamelf.com](https://noamelf.com)
 
@@ -20,9 +20,10 @@ by Noam Elfanbaum
 ---
 
 ## Python’s profilers
-- Python has 2 builtin profilers in stdlib:
+- Python has 2 builtin CPU profilers in stdlib:
   - profile - an early pure Python implementation
   - cProfile - a C extended profiler for better performance
+- Python 
 
 ---?code=profiling_demo.py&lang=python&title=Profiling demo 
 @[1-2](Power a number twice)
