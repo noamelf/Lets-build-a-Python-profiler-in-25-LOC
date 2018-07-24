@@ -1,4 +1,4 @@
-from . import sfProfiler
+import sfProfiler
 
 
 def calc(x):
