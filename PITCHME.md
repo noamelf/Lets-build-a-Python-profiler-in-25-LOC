@@ -177,7 +177,9 @@ Note:
 - The results are pretty clear,we can see that calc 100K took x time of our sampling and 200K took y time
 - Now let’s visualize it: `python demo1.py | flamegraph | browser`
 
----
+---?code=src/sfp_demo2.py&lang=python&title=Profile downloading peps
+@[7](Define cotroversial peps)
+@[13-15](Starting the profiler, running the code, and printing the stats)
 
 Now let’s run a more complex program
 pygmentize demo2.py
