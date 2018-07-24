@@ -19,5 +19,5 @@ def start(interval=0.005):
 
 
 def format_stats():
-    stack_count = [f'{stack} {count}' for stack, count in stats.items()]
-    return '\n'.join(stack_count)
+    stats_out = [f'{trace} {count}' for trace, count in stats.items()]
+    return '\n'.join(stats_out)
