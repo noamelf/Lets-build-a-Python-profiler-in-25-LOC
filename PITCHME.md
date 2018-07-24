@@ -66,33 +66,27 @@ and we're going to do just that!
 @[6](Easily access the stack)
 @[7-9](Extract the call trace and print it)
 
-<!--
-pygmentize stack_access.py
-python stack_access.py
-We saw we have a pretty easy way to understand where our program is at every given time, now let’s see how we trigger that functionality.
--->
+Note:
+- We saw we have a pretty easy way to understand where our program is at every given time, now let’s see 
+how we trigger that functionality.
 
 ---
 
-## Types of profilers
-There are two types of profilers that differ upon their triggers: 
-- Deterministic profilers - triggered on function/line called (like profile/cProfile)
-- Statistical profilers - triggered on a time interval
+## Types of triggers -> type of profiles
+- There are two types of profilers that differ upon their triggers: 
+    - Deterministic profilers - triggered on function/line called (like profile/cProfile)
+    - Statistical profilers - triggered on a time interval
 
 ---
 
 ## How do deterministic profilers work?
-Python let you specify a callback that gets run when interpreter events happen:
-- `sys.setprofile` - triggered when a function or a line of code is called
-- `sys.settrace` - triggered only when a function is called  
+- Python let you specify a callback that gets run when interpreter events happen:
+    - `sys.setprofile` - triggered when a function or a line of code is called
+    - `sys.settrace` - triggered only when a function is called  
+- When the callback gets called, it records the stack for later analysis.
 
-When the callback gets called, it records the stack for later analysis.
-
-<!--
-cd ../3-detriminstic-profiler
-pygmentize setprofile.py 
-python setprofile.py
--->
+---?code=src/setprofile.py&lang=python&title=Using setprofile
+@[9-10](Use log10 instead)
 
 ---
 
