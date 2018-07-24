@@ -159,11 +159,11 @@ how to present the output.
 beautiful graphs. 
 
 ---?code=src/sfProfiler.py&lang=python&title=Statistical Flame graph Profiler
-@[17-20](The sampler trigger is set like before)
-@[11-14](The sampler is collecting statistics about the stack visits)
-@[12-13](Formatting the stack into a string, each level separated by a semi colon)
-@[14](Counting the times the program spent in that call_stack)
-@[23-25](Formatting the stats so that the Flame graph tool can read it: <stack> <count> )
+@[15-19](The sampler trigger is set like before)
+@[9-12](The sampler is collecting statistics about the stack visits)
+@[10-11](Formatting the stack into a string, each level separated by a semi colon)
+@[12](Counting the times the program spent in that call_stack)
+@[22-26](Formatting the stats so that the Flame graph tool can read it: <stack> <count> )
 
 Note:
 - First let's see I'm not cheating: `cat sfProfiler.py | wc -l` 
