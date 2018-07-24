@@ -23,7 +23,6 @@ by Noam Elfanbaum
 - Python has 2 builtin CPU profilers in stdlib:
   - profile - an early pure Python implementation
   - cProfile - a C extended profiler for better performance
-- Python 
 
 ---?code=profiling_demo.py&lang=python&title=Profiling demo 
 @[1-2](Power a number twice)
@@ -32,13 +31,13 @@ by Noam Elfanbaum
 
 <!--It takes quite some time, what do you think is taking longer? -->
 
----
+<!--
 ## How to use Python profiler?
 - To see where does the program slows down, let's run the code and sort it by total time:
     ```bash
     python -m cProfile -s tottime foo.py
     ```
-
+-->
 
 ---?code=optimized_demo.py&lang=python&title=Optimized demo 
 @[8-9](Use log10 instead)
