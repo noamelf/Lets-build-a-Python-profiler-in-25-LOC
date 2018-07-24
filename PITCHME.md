@@ -167,6 +167,7 @@ beautiful graphs.
 
 Note:
 - First let's see I'm not cheating: `cat sfProfiler.py | wc -l` 
+- And this is with generous spacings!
 
 ---
 
