@@ -63,8 +63,8 @@ Note:
 and we're going to do just that!
 
 ---?code=src/stack_access.py&lang=python&title=Accessing the Python stack
-@[7](Easily access the stack)
-@[8-9](Extract the call trace and print it)
+@[6](Easily access the stack)
+@[7-9](Extract the call trace and print it)
 
 <!--
 pygmentize stack_access.py
