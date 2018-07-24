@@ -20,9 +20,11 @@ by Noam Elfanbaum
 ---
 
 ## Python’s profilers
+@ul
 - Python has 2 builtin CPU profilers in stdlib:
   - profile - an early pure Python implementation
   - cProfile - a C extended profiler for better performance
+@ulend
 
 Note:
 
@@ -73,10 +75,12 @@ how we trigger that functionality.
 ---
 
 ## Types of triggers -> type of profiles
+
+@ul
 - There are two types of profilers that differ upon their triggers: 
     - Deterministic profilers - triggered on function/line called (like profile/cProfile)
     - Statistical profilers - triggered on a time interval
-
+@ulend
 ---
 
 ## How do deterministic profilers work?
