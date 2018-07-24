@@ -24,6 +24,10 @@ by Noam Elfanbaum
   - profile - an early pure Python implementation
   - cProfile - a C extended profiler for better performance
 
+Note:
+
+- The best way to understand what is a the profiler is to see it in action.
+
 ---?code=src/profiling_demo.py&lang=python&title=Profiling demo 
 @[2-3](Power a number twice)
 @[6-7](Count the number of digits)
@@ -31,15 +35,17 @@ by Noam Elfanbaum
 
 Note:
 
-- It takes quite some time, which part if the code is taking the most time? -->
+- Run the code
+- It takes quite some time, which part if the code is taking the most time?
 - To see where does the program slows down, let's run the code and sort it by total time:
 python -m cProfile foo.py
 TODO: Maybe shows all the columns?
 - This shows different parameters, but we want to know which function is taking the most total time
   So we can add the -s tottime and see it clearly.
+- How can we make the count digit function more efficient?
 
 ---?code=src/optimized_demo.py&lang=python&title=Optimized demo 
-@[8-9](Use log10 instead)
+@[9-10](Use log10 instead)
 
 ---
 
