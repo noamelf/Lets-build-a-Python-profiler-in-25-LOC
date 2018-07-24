@@ -169,11 +169,10 @@ Note:
 - First let's see I'm not cheating: `cat sfProfiler.py | wc -l` 
 - And this is with generous spacings!
 
----
+---?code=src/sfp_demo1&lang=python&title=Simple usage of sfProfiler
+@[4-10](main calls calc with 2 different numbers)
+@[13-15](Starting the profiler, running the code, and printing the stats)
 
-- To test our proflier we’re going to use a simple program called demo1
-pygmentize demo1.py
-python demo1.py
 The results are pretty clear,we can see that calc 100K took x time of our sampling and 200K took y time
 Now let’s visualize it:
 python demo1.py | flamegraph | browser .
