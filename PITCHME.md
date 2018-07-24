@@ -25,7 +25,7 @@ by Noam Elfanbaum
   - cProfile - a C extended profiler for better performance
 
 ---?code=src/profiling_demo.py&lang=python&title=Profiling demo 
-@[1-2](Power a number twice)
+@[2-3](Power a number twice)
 @[5-6](Count the number of digits)
 @[9-11](Run the functions)
 
