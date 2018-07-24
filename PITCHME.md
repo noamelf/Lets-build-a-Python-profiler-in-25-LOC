@@ -184,7 +184,8 @@ Note:
 @[24-26](Run under the profiler)
 
 Note:
-- The results for more complex programs are harder to understand, practically impossible but with flagraph visualization tool they are easy.
+- The results for more complex programs are harder to understand, practically impossible but with flagraph 
+visualization tool they are easy.
 - python demo2.py | flamegraph | browser 
 
 ---
