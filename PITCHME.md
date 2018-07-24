@@ -160,6 +160,7 @@ beautiful graphs.
 
 ---?code=src/fProfiler.py&lang=python&title=Flame graph profiler
 
+---
 Notes:
 
 - Let's connect all the dots to our own statistical profile in 25 LOC.
