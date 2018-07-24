@@ -102,9 +102,11 @@ how we trigger that functionality.
 ## How do statistical profilers work?
 
 @ul
+
 - Statistical profilers sample the program on a given interval. 
 - It has less overhead than deterministic profiler, but is also less accurate.  
 - One way to implement the sampling is to ask the OS kernel to interrupt the program on a given interval.
+
 @ulend
 
 <!--
