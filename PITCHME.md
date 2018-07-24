@@ -110,13 +110,17 @@ how we trigger that functionality.
 
 @ulend
 
----?code=src/statistical_sampler.py&lang=python&title=Using OS signals to trigger sampling
-@[4-7](Setup a callback method)
-@[7](Set alarm for next sample)
-@[9](Setup signal to call our handler)
-@[10](Set the timer)
-@[12](Execute some code)
-@[14](Nullify the alarm upon exit)
+---?code=src/statistical_sampling.py&lang=python&title=Using OS signals to trigger sampling
+@[4-6](A callback method that prints the current line)
+@[8-11](Set the OS signal)
+@[9](The handler will run each time SIGPROF will be recevied)
+@[10](Set the start time and interval in which the signal will fire)
+@[11](Nullify the alarm upon exit)
+@[13](Set the sampler)
+@[15-16](Run complex calculations)
+
+Note:
+- What do you think, when should we use which profiler?
 
 ---
 
@@ -125,8 +129,8 @@ how we trigger that functionality.
 @ul
 
 - Statistical profilers:
-  - Low, controllable and predicted overhead by optimizing the sampling interval
-  - Less accurate result since it can miss stuff.
+  - Low, controllable and predicted overhead is possible by optimizing the sampling interval
+  - Less accurate result since it, by design, misses function/line calls.
   - More suitable for continuous, low impact production monitoring.
 
 @ulend
@@ -139,28 +143,21 @@ how we trigger that functionality.
 
 - Deterministic profilers:
   - Introduces a fixed amount of latency for every function call / line of code executed.
-  - Shows the exact program execution stack
+  - Collects the exact program execution stack
   - More suitable for interactive/local debugging.
   
 @ulend
-
-
-Note:
-- What do you think, when should we use which profiler?
 
 ---
 
 # Now, let’s build a (naive) statistical profiler in 25 LOC!
 
-<!--
-Let's connect all the dots to our own statistical profile in 25 LOC.
-I wanted to write it live with you guys, but it I was afraid it wouldn’t work, so I wrote it down in advance.
-First let’s see I’m not foolling you guys. 
-pygmentize sProfiler.py | wc -l
-pygmentize sProfiler.py
-The output is built in such a way that we can visualize it easily with a tool called flamegraph.
+Notes:
+- Let's connect all the dots to our own statistical profile in 25 LOC.
+- I wanted to write it live with you guys, but it I was afraid it wouldn’t work, so I wrote it down in advance.
+- The output is built in such a way that we can visualize it easily with a tool called flamegraph.
 
-To test our proflier we’re going to use a simple program called demo1
+- To test our proflier we’re going to use a simple program called demo1
 pygmentize demo1.py
 python demo1.py
 The results are pretty clear,we can see that calc 100K took x time of our sampling and 200K took y time
