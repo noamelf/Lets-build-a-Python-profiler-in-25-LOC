@@ -115,8 +115,8 @@ how we trigger that functionality.
 @[8-11](Set the OS signal)
 @[9](The handler will run each time SIGPROF will be recevied)
 @[10](Set the start time and interval in which the signal will fire)
-@[11](Nullify the alarm upon exit)
-@[13](Set the sampler)
+@[11-12](Nullify the alarm upon exit)
+@[14](Set the sampler)
 @[15-16](Run complex calculations)
 
 Note:

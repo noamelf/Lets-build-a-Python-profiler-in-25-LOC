@@ -12,6 +12,5 @@ def set_signal(handler, interval=1):
     atexit.register(null_timer)
 
 set_signal(print_handler)
-
 result = 7 ** 7 ** 7
 print(result)
