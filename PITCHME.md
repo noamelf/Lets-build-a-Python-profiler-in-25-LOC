@@ -177,16 +177,15 @@ Note:
 - The results are pretty clear,we can see that calc 100K took x time of our sampling and 200K took y time
 - Now let’s visualize it: `python demo1.py | flamegraph | browser`
 
----?code=src/sfp_demo2.py&lang=python&title=Profile downloading peps
+---?code=src/sfp_demo2.py&lang=python&title=A more complex example
 @[7](Define cotroversial peps)
-@[13-15](Starting the profiler, running the code, and printing the stats)
+@[10-15](Download ans save peps to temp file)
+@[18-21](Call save PEP on our predefined list)
+@[24-26](Run under the profiler)
 
-Now let’s run a more complex program
-pygmentize demo2.py
-python demo2.py
-The results for more complex programs are harder to understand, practically impossible but with flagraph visualization tool they are easy.
-python demo2.py | flamegraph | browser 
--->
+Note:
+- The results for more complex programs are harder to understand, practically impossible but with flagraph visualization tool they are easy.
+- python demo2.py | flamegraph | browser 
 
 ---
 
