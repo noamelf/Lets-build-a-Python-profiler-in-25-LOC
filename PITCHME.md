@@ -59,8 +59,12 @@ TODO: Maybe shows all the columns?
 @ulend
 
 Note: 
-- So one of the most satasfing things for me in programming is to figure out how things actually work, 
+- So one of the most satisfying things for me in programming is to figure out how things actually work, 
 and we're going to do just that!
+
+---?code=src/stack_access.py&lang=python&title=Accessing the Python stack
+@[7](Easily access the stack)
+@[8-9](Extract the call trace and print it)
 
 <!--
 pygmentize stack_access.py
