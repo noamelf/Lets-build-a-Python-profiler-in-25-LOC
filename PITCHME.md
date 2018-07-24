@@ -157,13 +157,15 @@ python demo2.py | flamegraph | browser
 ---
 
 ## Reference
-- [Talk code repository]()
-- Juila Evans blog post - https://jvns.ca/blog/2017/12/17/how-do-ruby---python-profilers-work-/
-- Nylas blog post - https://www.nylas.com/blog/performance/
-- Flame Graph by Brendan Gregg https://github.com/brendangregg/FlameGraph 
+- Juila Evans [post](https://jvns.ca/blog/2017/12/17/how-do-ruby---python-profilers-work-/) about Ruby and Python
+profilers
+- Nylas performance [post](https://www.nylas.com/blog/performance/) where they explain and showed how they built a 
+homemade performance monitoring service.
+- Brendan Gregg's [Flame Graph](https://github.com/brendangregg/FlameGraph) tool 
 - Python documentation about profilers -
   - https://docs.python.org/3/library/profile.html
   - https://docs.python.org/3/library/sys.html#sys.setprofile
+- The talk [Github repository](https://github.com/noamelf/Lets-build-a-Python-profiler-in-25-LOC)
 
 ---
 
