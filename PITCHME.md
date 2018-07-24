@@ -164,6 +164,10 @@ beautiful graphs.
 @[10-11](Formatting the stack into a string, each level separated by a semi colon)
 @[12](Counting the times the program spent in that call_stack)
 @[21-23](Formatting the stats so that the Flame graph tool can read it: <stack> <count> )
+
+Note:
+- First let's see I'm not cheating: `cat sfProfiler.py | wc -l` 
+
 ---
 
 - To test our proflier we’re going to use a simple program called demo1
