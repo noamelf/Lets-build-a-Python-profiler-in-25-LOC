@@ -29,14 +29,14 @@ by Noam Elfanbaum
 @[5-6](Count the number of digits)
 @[9-11](Run the functions)
 
-<!--It takes quite some time, what do you think is taking longer? -->
+<!--It takes quite some time, which part if the code is taking the most time? -->
 
 <!--
-## How to use Python profiler?
 - To see where does the program slows down, let's run the code and sort it by total time:
-    ```bash
-    python -m cProfile -s tottime foo.py
-    ```
+python -m cProfile foo.py
+TODO: Maybe shows all the columns?
+- This shows different parameters, but we want to know which function is taking the most total time
+  So we can add the -s tottime and see it clearly.
 -->
 
 ---?code=optimized_demo.py&lang=python&title=Optimized demo 
