@@ -86,10 +86,12 @@ how we trigger that functionality.
 - When the callback gets called, it records the stack for later analysis.
 
 ---?code=src/setprofile.py&lang=python&title=Using setprofile
-@[5-7](Define a callback function)
-@[9](Set trace)
+@[6-8](Define a callback function)
+@[11](Hook it to setprofile)
+@[12](Execute some code)
 
-
+Note:
+- We can see thee meaining 
 
 ---
 
