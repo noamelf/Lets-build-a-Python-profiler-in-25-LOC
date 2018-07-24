@@ -2,7 +2,7 @@ import sys
 import tempfile
 import urllib.request
 
-from src import sProfiler
+from src import sfProfiler
 
 
 def local_pep(pep):
@@ -18,6 +18,6 @@ def main():
         print(f'Download pep {pep} successfully', file=sys.stderr)
 
 
-sProfiler.start()
+sfProfiler.start()
 main()
-print(sProfiler.format_stats())
+print(sfProfiler.format_stats())

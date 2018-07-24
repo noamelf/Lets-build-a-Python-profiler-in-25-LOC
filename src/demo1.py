@@ -1,4 +1,4 @@
-from src import sProfiler
+from src import sfProfiler
 
 
 def calc(x):
@@ -10,6 +10,6 @@ def main():
     calc(200_000)
 
 
-sProfiler.start()
+sfProfiler.start()
 main()
-print(sProfiler.format_stats())
+print(sfProfiler.format_stats())

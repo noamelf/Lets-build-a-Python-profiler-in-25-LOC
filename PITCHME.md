@@ -158,15 +158,12 @@ how to present the output.
 - For this, there is a really cool project called flame graph that receives a fairly simple relative input, and produces 
 beautiful graphs. 
 
----?code=src/fProfiler.py&lang=python&title=Flame graph profiler
-
----
-Notes:
-
-- Let's connect all the dots to our own statistical profile in 25 LOC.
-- The output is built in such a way that we can visualize it easily with a tool called flamegraph.
-
-
+---?code=src/sfProfiler.py&lang=python&title=Statistical Flame graph Profiler
+@[10-13](The sampler trigger is set like before)
+@[5-8](The sampler is collecting the amount of times the program spent on which parts of the stack)
+@[6-7](Formatting the stack into a string, each level separated by a semi colon)
+@[8](Counting the times the program spent in that call_stack)
+@[15-17](Formating the stats so that the Flame graph tool can read it: <stack> <count> )
 ---
 
 - To test our proflier we’re going to use a simple program called demo1
