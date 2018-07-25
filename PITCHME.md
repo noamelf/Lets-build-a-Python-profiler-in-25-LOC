@@ -75,7 +75,7 @@ and we're going to do just that!
 
 ---?code=src/stack_access.py&lang=python&title=Accessing the process call stack
 @[6](Easily access the stack)
-@[7-9](Extract the call trace and print it)
+@[7-9](For e)
 
 Note:
 - We saw we have a pretty easy way to understand where our program is at every given time, now let’s see 
