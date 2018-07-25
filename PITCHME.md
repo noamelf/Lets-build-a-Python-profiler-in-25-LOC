@@ -8,8 +8,8 @@ by Noam Elfanbaum
 ## About me
 
 - Data Engineering lead at Bluevine
-- Involved with [PywebIL](https://www.meetup.com/PyWeb-IL/) & [Pycon Israel](https://il.pycon.org/)
-- Find me online at [@noamelf](https://twitter.com/noamelf) and [noamelf.com](https://noamelf.com)
+- Help organise [PywebIL](https://www.meetup.com/PyWeb-IL/) & [Pycon Israel](https://il.pycon.org/)
+- Find me online at [@noamelf](https://twitter.com/noamelf) & [noamelf.com](https://noamelf.com)
 
 ---
 
