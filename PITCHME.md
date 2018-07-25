@@ -87,11 +87,10 @@ how we trigger that functionality.
 
 ## Types of triggers -> type of profiles
 
-@ul
 - There are two types of profilers that differ upon their triggers: 
     - Deterministic profilers - triggered on function/line called (like profile/cProfile)
     - Statistical profilers - triggered on a time interval
-@ulend
+
 ---
 
 ## How do deterministic profilers work?
