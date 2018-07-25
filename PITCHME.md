@@ -30,7 +30,7 @@ Note:
 
 @ul
 
-- Python has 2 builtin CPU profilers in stdlib:
+- Python has 2 builtin profilers in stdlib:
   - profile - an early pure Python implementation
   - cProfile - a C extended profiler for better performance
 
