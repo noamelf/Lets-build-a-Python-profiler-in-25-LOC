@@ -126,8 +126,8 @@ how we trigger that functionality.
 @[9](The handler will run each time SIGPROF will be recevied)
 @[10](Set the start time and interval in which the signal will fire)
 @[11-12](Nullify the alarm upon exit)
-@[1-4](Set the sampler)
-@[15-16](Run complex calculations)
+@[13](Set the sampler)
+@[14-15](Run complex calculations)
 
 Note:
 - What do you think, when should we use which profiler?
