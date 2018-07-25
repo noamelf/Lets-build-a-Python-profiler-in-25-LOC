@@ -169,7 +169,7 @@ beautiful graphs.
 @[9-12](The sampler is collecting statistics about the stack visits)
 @[10-11](Formatting the stack into a string, each level separated by a semi colon)
 @[12](Counting the times the program spent in that call_stack)
-@[22-26](Formatting the stats in Flame graph format - "some;stack count" )
+@[22-26](Formatting the stats in Flame graph format - `some;stack <count>`)
 
 Note:
 - First let's see I'm not cheating: `cat sfProfiler.py | wc -l` 
