@@ -22,7 +22,7 @@ Note:
 > A profile is a set of statistics that describes how often and for how long various parts of the program executed. 
 
 Note:
-- We can use profi
+- We can use profiling to debug slow programs, monitor our production environment and more.
 
 ---
 
