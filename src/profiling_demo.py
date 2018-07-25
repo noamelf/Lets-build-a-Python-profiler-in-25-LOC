@@ -9,4 +9,4 @@ def count_digits(num):
 
 result = super_power(7)
 digit_count = count_digits(result)
-print(digit_count)
+print(f'Num of digits: {digit_count}')
