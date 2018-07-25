@@ -136,8 +136,8 @@ Note:
 
 ## When to use which profiler?
 
-- Statistical profilers:
 @ul
+- Statistical profilers:
   - Low, controllable and predicted overhead is possible by optimizing the sampling interval
   - Less accurate result since it, by design, misses function/line calls.
   - More suitable for continuous, low impact production monitoring.
@@ -146,9 +146,8 @@ Note:
     
 ---
 
-@ul
-
 - Deterministic profilers:
+@ul
   - Introduces a fixed amount of latency for every function call / line of code executed.
   - Collects the exact program execution stack
   - More suitable for interactive/local debugging.
