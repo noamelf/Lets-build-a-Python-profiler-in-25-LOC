@@ -11,19 +11,29 @@ by Noam Elfanbaum
 - Help organise [PywebIL](https://www.meetup.com/PyWeb-IL/) & [Pycon Israel](https://il.pycon.org/)
 - Find me online at [@noamelf](https://twitter.com/noamelf) & [noamelf.com](https://noamelf.com)
 
+Note:
+- I'm working in a fintech startup called Bluevine
+- I help organize the monthly Python meetup, and the yearly Israel Pycon (this year we had our 3 one)
+
 ---
 
-## What is profiling?
+## What is a program profile?
 
 > A profile is a set of statistics that describes how often and for how long various parts of the program executed. 
 
+Note:
+- We can use profi
+
 ---
 
-## Python’s profilers
+## Python’s (stdlib) profilers
+
 @ul
+
 - Python has 2 builtin CPU profilers in stdlib:
   - profile - an early pure Python implementation
   - cProfile - a C extended profiler for better performance
+
 @ulend
 
 Note:
