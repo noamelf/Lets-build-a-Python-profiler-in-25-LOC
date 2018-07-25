@@ -136,9 +136,8 @@ Note:
 
 ## When to use which profiler?
 
-@ul
-
 - Statistical profilers:
+@ul
   - Low, controllable and predicted overhead is possible by optimizing the sampling interval
   - Less accurate result since it, by design, misses function/line calls.
   - More suitable for continuous, low impact production monitoring.
