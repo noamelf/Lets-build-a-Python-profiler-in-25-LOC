@@ -147,8 +147,6 @@ Note:
     
 ---
 
-## When to use which profiler type?
-
 @ul
 
 - Deterministic profilers:
