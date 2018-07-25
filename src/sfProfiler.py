@@ -21,5 +21,5 @@ def start(interval=0.005):
 
 def format_stats():
     stats_out = [f'{trace} {count}' for trace, count
-                 in reversed(stats.items())]
-    return '\n'.join(stats_out)
+                 in stats.items()]
+    return '\n'.join(reversed(stats_out))
