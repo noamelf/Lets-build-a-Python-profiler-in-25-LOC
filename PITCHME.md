@@ -77,6 +77,7 @@ and we're going to do just that!
 @[6](Easily access the stack)
 @[7](Extract the stack into a list of frames)
 @[8-9](Print each frame line name, number, function name and actual code)
+@[11-14](Call the code through some hierarchy)
 
 Note:
 - We saw we have a pretty easy way to understand where our program is at every given time, now let’s see 
