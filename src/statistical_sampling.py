@@ -12,4 +12,4 @@ def start(handler, interval=1):
 
 start(print_handler)
 result = 7 ** 7 ** 7
-print(result)
+print(len(str(result)))
