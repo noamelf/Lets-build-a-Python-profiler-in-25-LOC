@@ -184,10 +184,9 @@ Note:
 - Now let’s visualize it: `python demo1.py | flamegraph | browser`
 
 ---?code=src/sfp_demo2.py&lang=python&title=A more complex example
-@[7](Define cotroversial peps)
-@[10-15](Download ans save peps to temp file)
-@[18-21](Call save PEP on our predefined list)
-@[24-26](Run under the profiler)
+@[7-12](Downloads and saves peps to a temp file)
+@[15-18](Call save PEP on our predefined list)
+@[21-23](Run under the profiler)
 
 Note:
 - The results for more complex programs are harder to understand, practically impossible but with flagraph 
