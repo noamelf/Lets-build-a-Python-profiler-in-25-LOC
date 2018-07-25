@@ -76,7 +76,7 @@ and we're going to do just that!
 ---?code=src/stack_access.py&lang=python&title=Accessing the process call stack
 @[6](Easily access the stack)
 @[7](Extract the stack into a list of frames)
-@[8-9](Print each frame line name, number, function name )
+@[8-9](Print each frame line name, number, function name and actual code)
 
 Note:
 - We saw we have a pretty easy way to understand where our program is at every given time, now let’s see 
